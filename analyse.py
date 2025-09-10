@@ -6,11 +6,12 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("transformierte_normierte_daten.csv")
 print(df.head(10))
 
-df = df[df['time_to_fail'] != 0]
+# df = df[df['time_to_fail'] != 0]
 
 
 # source .venv/bin/activate.fish
 # deactivate
+
 
 target_variable = "time_to_fail"
 #df = df.drop(columns=['c_van17', 'c_serial_number', 'status_75'])
