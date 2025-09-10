@@ -1,0 +1,6 @@
+*.csv
+*.joblib
+.venv/
+plots/
+*.gz
+*.tmp

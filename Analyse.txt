@@ -1,0 +1,19 @@
+Auffälligkeiten Verteilung:
+
+Variablen mit starken Ausreißern:
+- AmpDevStrict, AmpSyncCheck, ClCos150, ClCos300, ClSin150, ClSin300, InvSampTime, InvSampTurn, OfsCos100, OfsCos200, OfsDevTight, OfsSin100, OfsSin200, RadV_25per, RadV_50per, RawRadius
+- Diese Variablen zeigen das Muster "viele geringe Werte, wenige sehr hohe Werte". Durch das Vorhandensein von Ausreißern werden die Mittelwerte stark beeinflusst.
+-> Transformation (logarithmisch oder Wurzel) zur Normalisierung und Minimierung der Auswirkungen der Ausreißern
+
+Variablen mit schwacher rechtsschiefer Verteilung:
+- mileage, sick_time, time_to_fail, EcuLifeT
+- Diese Variablen zeigen eine Häufung von Datenpunkten bei niedrigen Werten, mit einigen höheren Werten, die die rechte Seite der Verteilung verlängern.
+-> evtl. Transformation (logarithmisch oder Quadratwurzel) zur Symmetrisierung und Minderung der Auswirkungen der Ausreißern
+
+Variablen die normalverteilt sind:
+msg_timestamp:
+- Eignet sich gut in Modellierungsverfahren, die davon profitieren, wie z.B. eine lineare Regression
+
+
+Auffälligkeiten Zusammenhang nach Normalisierung:
+
