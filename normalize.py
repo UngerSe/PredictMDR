@@ -5,6 +5,8 @@ from sklearn.preprocessing import StandardScaler
 # Laden des Datensatzes
 df = pd.read_csv("prep_dataset.csv")
 
+df = df[df['time_to_fail'] != 0]
+
 # Liste der relevanten Variablen, die transformiert werden sollen
 transform_variables = [
     "AmpDevStrict", "AmpSyncCheck", "ClCos150", "ClCos300", 
