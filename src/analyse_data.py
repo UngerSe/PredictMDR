@@ -1,7 +1,7 @@
 import pandas as pd
 
 def main():
-    path = "data/raw/dataset.csv"
+    path = "../data/raw/dataset.csv"
 
     df = pd.read_csv(path)
 
@@ -34,7 +34,7 @@ def main():
     print("\nMessungen pro Seriennummer (Deskriptives):")
     print(counts)
 
-    processed_path = "data/processed/01_phase1_overview.csv"
+    processed_path = "../data/processed/01_phase1_overview.csv"
     df.to_csv(processed_path, index=False)
     print(f"Zwischenergebnis gespeichert: {processed_path}")
 
